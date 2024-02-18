@@ -28,7 +28,36 @@ apt-get install -y --force-yes \
     nvidia-cuda-toolkit \
     software-properties-common
 
+# Installation of ROS Noetic and essential packages
+sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add -
+apt update
+apt install -y --force-yes \
+    ros-noetic-desktop \
+    ros-noetic-rosbash \
+    python3-rosdep \
+    python3-wstool \
+    python3-catkin-tools
 
+# Init rosdep and update
+rosdep init
+rosdep update
+
+# Installation of MoveIt! related packages
+apt install -y --force-yes \
+    ros-noetic-libfranka \
+    ros-noetic-franka-ros \
+    ros-noetic-panda-moveit-config \
+    ros-noetic-effort-controllers \
+    ros-noetic-position-controllers \
+    ros-noetic-ros-controllers \
+    ros-noetic-effort-controllers \
+    ros-noetic-rqt-controller-manager \
+    ros-noetic-four-wheel-steering-msgs \
+    ros-noetic-urdf-geometry-parser \
+    ros-noetic-urdf-geometry-parser \
+    ros-noetic-rosparam-shortcuts \
+    ros-noetic-moveit-resources-panda-moveit-config
 
 # Let's have a custom PS1 to help people realise in which container they are
 # working.
