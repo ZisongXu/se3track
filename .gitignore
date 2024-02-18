@@ -2,7 +2,7 @@
 *.swp
 *.swo
 
-sing_docker
+se3track
 
 !home/
 home/*

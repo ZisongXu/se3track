@@ -16,4 +16,4 @@ singularity run \
     --bind=/dev \
     --bind=scripts:/scripts \
     --home=home:${HOME} \
-    sing_docker
+    se3track

@@ -1,5 +1,5 @@
 bootstrap:docker
-From:ubuntu:20.04
+From:wenbowen123/se3_tracknet:latest
 
 %labels
 

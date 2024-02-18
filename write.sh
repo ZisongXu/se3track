@@ -2,4 +2,4 @@
 singularity shell --fakeroot \
     --writable \
     --home=home:$HOME \
-    poseRBPF20
+    se3track

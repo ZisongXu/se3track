@@ -1,7 +1,7 @@
 #!/bin/bash
 singularity build --fakeroot \
     --sandbox \
-    sing_docker \
+    se3track \
     Singularity
 
 # Usually the home/.bashrc will include user-specific changes and we don't want
