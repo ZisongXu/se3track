@@ -1,4 +1,4 @@
-PS1="[sing_docker] Singularity> \w \$ "
+PS1="[se3track] Singularity> \w \$ "
 export ROS_MASTER_URI=http://localhost:11311
 export ROS_HOSTNAME=localhost
 
