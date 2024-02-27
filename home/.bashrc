@@ -1,7 +1,7 @@
 PS1="[se3track] Singularity> \w \$ "
 export ROS_MASTER_URI=http://localhost:11311
 export ROS_HOSTNAME=localhost
-
+export PATH="$PATH:/home/zisongxu/.local/bin"
 # export PATH="$HOME/Anaconda/bin:$PATH"  # commented out by conda initialize
 
 # >>> conda initialize >>>
